@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pixel Nova - Premium Sci-Fi Space Engineering Portfolio. Fusing code and interactive telemetry.">
+  <title>Pixel Nova | Solaris Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- PAGE LOAD OVERLAY -->
+  <div id="loader-overlay" class="loader-overlay">
+    <div class="loader-spinner"></div>
+    <div class="loader-text">INITIATING SOLARIS INTERFACE CORE... STANDBY</div>
+  </div>
+
+  <!-- BACKGROUND GRIDS -->
+  <div class="grid-container">
+    <div class="perspective-grid"></div>
+  </div>
+
+  <!-- FIXED HUD telemetry overlays -->
+  <div class="hud-layer">
+    <div class="hud-panel hud-top-left">
+      <div>SYS_REF: SOLARIS_CORE_v1.1</div>
+      <div>LAT_COORD: 12° 58' 23'' N</div>
+      <div class="hud-line"></div>
+    </div>
+    <div class="hud-panel hud-top-right">
+      <div>CLOCK_TIME: <span id="hud-clock">00:00:00</span></div>
+      <div>CORE_TEMP: 42.6°C <span class="hud-blink" style="color: var(--success);">[OK]</span></div>
+      <div class="hud-line"></div>
+    </div>
+    <div class="hud-panel hud-bottom-left">
+      <div>SECTOR_GRID: PX_NOVA_03</div>
+    </div>
+    <div class="hud-panel hud-bottom-right">
+      <div>ENRG_LVL: 98.4%</div>
+      <div class="hud-spin">⚙</div>
+    </div>
+  </div>
+
+  <!-- HERO SECTION -->
+  <header class="hero-section">
+    <div class="subtitle-badge">
+      <span class="status-dot"></span>
+      SOLARIS SYSTEM ONLINE
+    </div>
+    <h1 class="hero-title">Pixel <span>Nova</span></h1>
+    <p class="hero-description">
+      We are a three-member space-engineering developer cell fusing high-performance web architecture with immersive visual telemetry.
+    </p>
+    <button id="start-btn" class="btn-solaris">INITIATING SYSTEM SCAN</button>
+    <div class="scroll-indicator">
+      <span>SCROLL DOWN</span>
+      <div class="scroll-indicator-arrow"></div>
+    </div>
+  </header>
+
+  <!-- HAZARD LINE BREAK -->
+  <div class="hazard-stripe"></div>
+
+  <!-- SCROLL-DRIVEN DECONSTRUCTION INTERACTIVE CORE -->
+  <section id="scroll-flow-container" class="scroll-flow-container">
+    <div id="canvas-wrapper" class="sticky-canvas-wrapper">
+      <!-- Rotating holographic telemetry indicators -->
+      <div class="hologram-ring ring-outer"></div>
+      <div class="hologram-ring ring-mid"></div>
+      <div class="hologram-ring ring-inner"></div>
+      
+      <!-- Interactive canvas -->
+      <canvas id="model-canvas" class="model-canvas"></canvas>
+    </div>
+
+    <!-- Scrolling Text Overlays -->
+    <div class="scroll-panels-wrapper">
+      <!-- Panel 1 -->
+      <article class="scroll-panel panel-01 glass-panel active">
+        <div class="panel-label">
+          <span style="color: var(--gold);">//</span> MODULE_00 / INIT
+        </div>
+        <h3 class="panel-title">SYSTEM RE-ALIGN</h3>
+        <p class="panel-desc">
+          As the user scrolls, the cybernetic reactor core begins deconstruction. We leverage canvas buffers to simulate high-fidelity 3D meshes that separate into distinct float arrays.
+        </p>
+        <div class="panel-stat-box">
+          <div class="panel-stat-item">
+            <span class="stat-label">REACTOR CORE</span>
+            <span class="stat-val">ACTIVE</span>
+          </div>
+          <div class="panel-stat-item">
+            <span class="stat-label">DECONSTRUCT</span>
+            <span class="stat-val">0.00%</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Panel 2 -->
+      <article class="scroll-panel panel-02 glass-panel">
+        <div class="panel-label">
+          <span style="color: var(--gold);">//</span> MODULE_01 / ZESTAY
+        </div>
+        <h3 class="panel-title">MISSION: ZESTAY</h3>
+        <p class="panel-desc">
+          A user-centric shared living platform that matches students and professionals with verified PG accommodations and compatible roommates — eliminating middlemen from the housing equation.
+        </p>
+        <div class="panel-stat-box">
+          <div class="panel-stat-item">
+            <span class="stat-label">STATUS</span>
+            <span class="stat-val">STABLE [100%]</span>
+          </div>
+          <div class="panel-stat-item">
+            <span class="stat-label">AWARDS</span>
+            <span class="stat-val">GDG HACKATHON WINNER</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Panel 3 -->
+      <article class="scroll-panel panel-03 glass-panel">
+        <div class="panel-label">
+          <span style="color: var(--gold);">//</span> MODULE_02 / AMOGHA
+        </div>
+        <h3 class="panel-title">AMOGHA PLATFORM</h3>
+        <p class="panel-desc">
+          Currently deployed on active duty as software interns at Amogha Foundation. We are engineering campaign telemetry dashboards and highly accessible portals to support localized charity initiatives.
+        </p>
+        <div class="panel-stat-box">
+          <div class="panel-stat-item">
+            <span class="stat-label">INTERNSHIP</span>
+            <span class="stat-val">ACTIVE RUN</span>
+          </div>
+          <div class="panel-stat-item">
+            <span class="stat-label">SYSTEM BUILD</span>
+            <span class="stat-val">IN PROGRESS</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Panel 4 -->
+      <article class="scroll-panel panel-04 glass-panel">
+        <div class="panel-label">
+          <span style="color: var(--gold);">//</span> MODULE_03 / CREW
+        </div>
+        <h3 class="panel-title">SCAN TARGET SET</h3>
+        <p class="panel-desc">
+          Reactor deconstruction complete. Telemetry grids are stable. Scroll below to access detailed bio-scans and telemetry charts of our engineering squad.
+        </p>
+        <div class="panel-stat-box">
+          <div class="panel-stat-item">
+            <span class="stat-label">SENSORS</span>
+            <span class="stat-val">CALIBRATED</span>
+          </div>
+          <div class="panel-stat-item">
+            <span class="stat-label">GRID STATUS</span>
+            <span class="stat-val">STABILIZED</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- HAZARD LINE BREAK -->
+  <div class="hazard-stripe"></div>
+
+  <!-- TEAM BIOMETRICS SECTION -->
+  <section id="team-section" class="team-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// SQUAD PROTOCOL</span>
+        <h2 class="section-title">CREW BIOMETRICS</h2>
+      </div>
+
+      <div class="team-grid">
+        <!-- ANIRUDH NAIR -->
+        <article class="team-card glass-panel">
+          <div class="team-avatar-container">
+            <img class="team-avatar" src="assets/images/anirudh.png" alt="Anirudh Nair">
+          </div>
+          <div class="team-info">
+            <div class="team-role">Frontend Developer</div>
+            <h3 class="team-name">Anirudh Nair</h3>
+            <p class="team-bio">
+              Creative coder specializing in high-performance canvas rendering systems, vector geometry, and procedural layout engines. Hackathon winner and core architecture lead.
+            </p>
+            <div class="tech-gauges">
+              <div class="gauge-bar-wrapper">
+                <div class="gauge-label-info">
+                  <span>System Architecture</span>
+                  <span>95%</span>
+                </div>
+                <div class="gauge-track">
+                  <div class="gauge-fill" data-fill="95%"></div>
+                </div>
+              </div>
+              <div class="gauge-bar-wrapper">
+                <div class="gauge-label-info">
+                  <span>Creative Computing</span>
+                  <span>92%</span>
+                </div>
+                <div class="gauge-track">
+                  <div class="gauge-fill" data-fill="92%"></div>
+                </div>
+              </div>
+              <div class="gauge-bar-wrapper">
+                <div class="gauge-label-info">
+                  <span>GDG Hackathons</span>
+                  <span>90%</span>
+                </div>
+                <div class="gauge-track">
+                  <div class="gauge-fill" data-fill="90%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ADITYA NAIR -->
+        <article class="team-card glass-panel">
+          <div class="team-avatar-container">
+            <img class="team-avatar" src="assets/images/aditya.png" alt="Aditya Nair">
+          </div>
+          <div class="team-info">
+            <div class="team-role">UI/UX &amp; Canvas/PPT Specialist</div>
+            <h3 class="team-name">Aditya Nair</h3>
+            <p class="team-bio">
+              Space-grade visual designer and modular frontend engineer. Dedicated to creating sub-pixel perfect layouts, glassmorphic HUD assets, and smooth micro-interactions.
+            </p>
+            <div class="tech-gauges">
+              <div class="gauge-bar-wrapper">
+                <div class="gauge-label-info">
+                  <span>UI Core Systems</span>
+                  <span>93%</span>
+                </div>
+                <div class="gauge-track">
+                  <div class="gauge-fill" data-fill="93%"></div>
+                </div>
+              </div>
+              <div class="gauge-bar-wrapper">
+                <div class="gauge-label-info">
+                  <span>Interactive Styling</span>
+                  <span>95%</span>
+                </div>
+                <div class="gauge-track">
+                  <div class="gauge-fill" data-fill="95%"></div>
+                </div>
+              </div>
+              <div class="gauge-bar-wrapper">
+                <div class="gauge-label-info">
+                  <span>Asset Optimization</span>
+                  <span>80%</span>
+                </div>
+                <div class="gauge-track">
+                  <div class="gauge-fill" data-fill="80%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- DEVJITH KURUP -->
+        <article class="team-card glass-panel">
+          <div class="team-avatar-container">
+            <img class="team-avatar" src="assets/images/devjith.png" alt="Devjith Kurup">
+          </div>
+          <div class="team-info">
+            <div class="team-role">Backend Developer</div>
+            <h3 class="team-name">Devjith Kurup</h3>
+            <p class="team-bio">
+              Systems programmer focused on backend databases, microservice connectivity, and modular routing nodes. Dedicated to latency-critical logic pipelines.
+            </p>
+            <div class="tech-gauges">
+              <div class="gauge-bar-wrapper">
+                <div class="gauge-label-info">
+                  <span>DB Networks</span>
+                  <span>92%</span>
+                </div>
+                <div class="gauge-track">
+                  <div class="gauge-fill" data-fill="92%"></div>
+                </div>
+              </div>
+              <div class="gauge-bar-wrapper">
+                <div class="gauge-label-info">
+                  <span>Server Logic Engine</span>
+                  <span>90%</span>
+                </div>
+                <div class="gauge-track">
+                  <div class="gauge-fill" data-fill="90%"></div>
+                </div>
+              </div>
+              <div class="gauge-bar-wrapper">
+                <div class="gauge-label-info">
+                  <span>API Routing Nodes</span>
+                  <span>88%</span>
+                </div>
+                <div class="gauge-track">
+                  <div class="gauge-fill" data-fill="88%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- HAZARD LINE BREAK -->
+  <div class="hazard-stripe"></div>
+
+  <!-- PROJECTS SECTION -->
+  <section class="projects-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// MODULE LOGS</span>
+        <h2 class="section-title">ENGINEERING DEPLOYMENTS</h2>
+      </div>
+
+      <div class="projects-grid">
+        <!-- ZESTAY -->
+        <article class="project-card glass-panel">
+          <div>
+            <div class="project-header-row">
+              <span class="project-num">01</span>
+              <span class="project-status-badge">COMPLETED / STABLE</span>
+            </div>
+            <h3 class="project-title">ZESTAY</h3>
+            <p class="project-desc">
+              A user-centric platform that helps students and working professionals find verified PG accommodations and compatible roommates. Zestay integrates property listings with smart compatibility-matching based on lifestyle, habits, and budgets — building a transparent, community-driven marketplace that eliminates middlemen from the housing process.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">Express</span>
+              <span class="tech-tag">MongoDB</span>
+            </div>
+          </div>
+          <div class="project-footer">
+            <a href="https://zestay0.web.app/index.html" target="_blank" class="project-link">
+              VIEW LIVE SITE
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- AMOGHA FOUNDATION -->
+        <article class="project-card glass-panel">
+          <div>
+            <div class="project-header-row">
+              <span class="project-num">02</span>
+              <span class="project-status-badge project-status-badge.active-dev">ACTIVE INTERNSHIP</span>
+            </div>
+            <h3 class="project-title">AMOGHA PORTAL</h3>
+            <p class="project-desc">
+              Engineering the foundation's official web presence and donor dashboards. Focus on mobile responsiveness, campaign statistics readouts, and highly accessible user flows for charitable integrations.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Vite</span>
+              <span class="tech-tag">JavaScript Modules</span>
+              <span class="tech-tag">Vanilla CSS</span>
+              <span class="tech-tag">Firebase Nodes</span>
+            </div>
+          </div>
+          <div class="project-footer">
+            <span class="text-muted" style="font-size: 0.75rem; font-family: var(--font-header);">SYSTEM COMPILES UNDER ACTIVE Intern Contract</span>
+          </div>
+        </article>
+
+        <!-- GDG HACKATHONS -->
+        <article class="project-card glass-panel">
+          <div>
+            <div class="project-header-row">
+              <span class="project-num">03</span>
+              <span class="project-status-badge">COMPLETED / VICTORIES</span>
+            </div>
+            <h3 class="project-title">GDG MISSIONS</h3>
+            <p class="project-desc">
+              Participated and scored top rankings in hackathons organized by Google Developer Groups (GDG) on campus. Formulated systems ranging from smart IoT telemetry monitors to high-accessibility web tools.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Rapid Prototyping</span>
+              <span class="tech-tag">API Integrations</span>
+              <span class="tech-tag">UI Telemetry</span>
+            </div>
+          </div>
+          <div class="project-footer">
+            <span class="text-muted" style="font-size: 0.75rem; font-family: var(--font-header);">CORE CREDENTIALS VERIFIED</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- HAZARD LINE BREAK -->
+  <div class="hazard-stripe"></div>
+
+  <!-- INTERACTIVE TERMINAL SECTION -->
+  <section class="terminal-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// DIRECT COMMAND OVERRIDE</span>
+        <h2 class="section-title">SOLARIS INTERACTIVE CONSOLE</h2>
+      </div>
+
+      <div class="terminal-wrapper">
+        <div class="terminal-header">
+          <div class="terminal-dots">
+            <span class="terminal-dot red"></span>
+            <span class="terminal-dot yellow"></span>
+            <span class="terminal-dot green"></span>
+          </div>
+          <div>SOLARIS NODE: guest@pixelnova</div>
+          <div>v1.1.0</div>
+        </div>
+        <div id="terminal-body" class="terminal-body">
+          <div id="terminal-history" class="terminal-history"></div>
+          <div class="terminal-input-row">
+            <span class="terminal-prompt">guest@pixelnova:~$</span>
+            <input type="text" id="terminal-input" class="terminal-input" placeholder="type 'help' for diagnostics..." autocomplete="off">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SITE FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>PIXEL NOVA SYSTEMS &copy; 2026. ALL TELEMETRY GRIDS ONLINE.</p>
+      <div class="footer-links">
+        <a href="https://github.com/Pixel-Nova-v1-1" class="footer-link" target="_blank">GITHUB</a>
+        <a href="mailto:hire.pixelnova@gmail.com" class="footer-link">EMAIL</a>
+        <a href="#scroll-flow-container" class="footer-link">REACTOR CORE</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- HUD Live Clock Script -->
+  <script>
+    setInterval(() => {
+      const clock = document.getElementById('hud-clock');
+      if (clock) {
+        const d = new Date();
+        clock.textContent = d.toTimeString().split(' ')[0];
+      }
+    }, 1000);
+  </script>
+
+  <!-- Core JavaScript Module -->
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
